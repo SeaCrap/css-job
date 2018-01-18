@@ -1,4 +1,4 @@
-clearfix::after{
+.clearfix::after{
     content: '';
     display: block;
     clear: both;
@@ -12,15 +12,35 @@ ul{
 body ul{
     padding: 0;
     margin: 0; 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dt,
+dd{
+    padding: 0;
+    margin: 0;
 } 
 body{
-    background-color: black;
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
 }
 .top-nav-bar{ 
     height: 50px;
-    /* width: 1500px; */
+    position: fixed;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 16px 20px 16px;
+    padding: 20px 0 20px 0;
+}
+.nav-bar-new{
+    padding: 0 20px;
 }
 .logo{
     float: left;
@@ -57,5 +77,73 @@ body{
     color: #fff;
     border-bottom: 3px solid #EC6149;
 }
-
-
+.banane{
+    height: 515px;
+    background-size: cover;
+    background: url(../images/bg.jpg) center center no-repeat;
+}
+.banane .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.usercard{
+    border: 1px solid red;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+.usercard .pic-text{
+    padding: 50px;
+}
+.pic-text .pic{
+    float: left;
+}
+.pic-text .text{
+    position: relative;
+    float: left;
+    width: 470px;
+    margin-left: 65px;
+}
+.pic-text .bubble{
+    display: inline-block;
+    padding: 4px 16px;
+    line-height: 22px;
+    margin-bottom: 23px;
+    background-color: #E6686A;
+    color: #fff;
+    font-weight: bold;
+}
+.pic-text .bubble:hover{
+    font-size: 12px;
+}
+.pic-text .bubble .triangle{
+    position: absolute;
+    width: 100px;
+    top: 30px;
+    left: 4px;
+    border:10px solid transparent;
+    width:0px;
+    height:0px;
+    border-left-color: #E6686A;
+    border-top-width:0px;
+}
+.pic-text .bubble hr{
+    margin: 30px 0;
+    display: inline-block;
+    height: 0;
+    border: none;
+    border: 1px solid #ccc;
+}
+.pic-text dt{
+    float: left;
+    width: 30%;
+    padding: 5px 0;
+    font-weight: bold;
+}
+.pic-text dd{
+    float: left;
+    width: 70%;
+    color: #999;
+    padding: 5px 0;
+}
