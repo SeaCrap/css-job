@@ -26,7 +26,7 @@ dd{
 body{
     background-color: #efefef;
 }
-body ul{
+body{
     margin: 0;
     padding: 0;
  }
@@ -85,7 +85,7 @@ body ul{
     background-color: rgba(0, 0, 0, 0.8);
 }
 .usercard{
-    /* border: 1px solid red; */
+    border: 1px solid red;
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -152,12 +152,25 @@ hr{
     color: #666;
 }
 .usercard footer .media{
+    text-align: center;
     background-color: #E6686A;
-    
-    /* padding: 35px 0; */
+}
+.usercard .media a{
+    /* border: 1px solid #666; */
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    padding: 5px 0;
+    line-height: 30px;
+    margin: 15px 20px;
+}
+.usercard .media a:hover{
+    width: 50px;
+    background-color: rgb(209, 85, 87);
 }
 .usercard svg{
     width: 30px;
     height: 30px;
     fill: #fff;
+    vertical-align: top;
 }
